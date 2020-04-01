@@ -13,7 +13,7 @@ k = np.arange(n)
 T = n/Fs
 
 
-serdev = '/dev/ttyACM0'
+serdev = '/dev/ttyACM1'
 s = serial.Serial(serdev)
 for x in range(0, int(Fs)):
     line=s.readline() # Read an echo string from K66F terminated with '\n'
